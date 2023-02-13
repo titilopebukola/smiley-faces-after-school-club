@@ -1,4 +1,4 @@
-function Activities(name, src, clicks, views) {
+function Activity(name, src, clicks, views) {
   this.name = name;
   this.src = src;
   this.clicks = clicks;
@@ -9,29 +9,12 @@ function Activities(name, src, clicks, views) {
 Activity.allActivities = [];
 
 let totalClicks = 0;
-const maxClicks = 6;
+const maxClicks = 3;
 
-const activityNames = [
-  "music",
-  "mind-game",
-  "reading",
-  "board-game",
-  "scrabble",
-  "writting",
-  "art",
-  "basket-ball",
-  "typing",
-  "geography",
-  "sport",
-  "science",
-  "piano",
-  "play",
-  "map",
-  "build",
-];
+const activityNames = ["music", "reading", "game", "sport", "science", "piano", "play", "map", "build"];
 
 if (localStorage.getItem("activityData") == null) {
-  for (let i = 0; i < productNames.length; i++) {
+  for (let i = 0; i < activityNames.length; i++) {
     new Activity(activityNames[i], `images/${activityNames[i]}.jpg`, 0, 0);
   }
 } else {
@@ -145,7 +128,7 @@ function renderChart() {
   };
 
   const config = {
-    type: "pie",
+    type: "bar",
     data: data,
     options: {
       scales: {
@@ -172,23 +155,3 @@ function renderChart() {
 renderImages();
 
 // function to set the theme of our website
-function setIheme() {
-  if (localStorage.getItem("theme") === "light" || localStorage.getItem("theme") === null) {
-    localStorage.setItem("theme", "dark");
-    document.body.classList.add("dark");
-  } else {
-    localStorage.setItem("theme", "light");
-    document.body.classList.remove("dark");
-  }
-}
-
-const themeBtn = document.getElementById("theme-btn");
-themeBtn.addEventListener("click", setIheme);
-
-// function to get the current of our website
-function getTheme() {
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-  }
-}
-getTheme();

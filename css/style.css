@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
   */
 header {
   grid-area: 1 /1 /2 /3;
-  background-color: #6666ff;
+  background-color: lightcoral;
   color: white;
 }
 
@@ -57,7 +58,7 @@ h1 {
 
 footer {
   grid-area: 3 / 1 / 4 / 3;
-  background-color: #6666ff;
+  background-color: lightcoral;
 }
 
 /* main styles */

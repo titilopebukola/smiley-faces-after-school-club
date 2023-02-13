@@ -7,7 +7,7 @@ Can I get a place that will actually look after them and their developmental gro
 ## Good news!
 Smiley faces after school club is a place to think of when faced with worries of having you kids in good hands. We provide after school club with several fun educational activites and skills that could help your little one both in the present and in future. 
 
-we provide a healthy safe environment for your kids and offers support to the  needs of working parents as well as healthy behaviour and physical well being of your children.
+We provide a healthy safe environment for your kids and offers support to the  needs of working parents as well as healthy behaviour and physical well being of your children.
 
 We are ofsted regulated club and have highy trained and experienced nannies, carers and teachers that could look after your little ones.
 

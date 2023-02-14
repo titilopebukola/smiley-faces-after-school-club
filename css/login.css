@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #f5f5f5;
+  z-index: 9;
+}
+.nav {
+  padding: 10px 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+.brand-logo {
+  width: 200px;
+  height: 70px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items a {
+  margin-left: 20px;
+}
+
+.nav-items a img {
+  width: 30px;
+}
+
+.links-container {
+  width: 100%;
+  display: flex;
+  padding: 10px 10vw;
+  justify-content: center;
+  list-style: none;
+}
+
+.link {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #555;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+form {
+  width: 600px;
+  margin: 200px auto;
+}
+div {
+  width: 100%;
+  margin: 15px auto;
+}
+label {
+  display: block;
+  padding: 20px;
+  font-size: 25px;
+}
+input {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid rgb(98, 98, 251);
+  margin-left: 20px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+button {
+  margin: 20px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  background: linear-gradient(90deg, aqua, pink, violet);
+}
+span {
+  display: block;
+  margin-left: 20px;
+  color: coral;
+  font-style: italic;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(45, 42, 42);
+  color: white;
+  padding: 10px 0 30px;
+
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.logo {
+  width: 150px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}

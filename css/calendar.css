@@ -3,6 +3,43 @@
 }
 
 body {
+  margin: 0 auto;
+  background-color: rgb(11, 11, 142);
+  color: white;
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* form input */
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border-color: #fff;
+}
+
+input {
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+tr:hover {
+  background-color: blueviolet;
+}
+
+tr:nth-child(even) {
+  background-color: salmon;
 }

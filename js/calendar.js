@@ -32,6 +32,7 @@ function Event(name, age, number, address, startDate, endDate) {
   this.address = address;
   this.startDate = startDate;
   this.endDate = endDate;
+  Event.allEvents.push(this);
 }
 
 Event.allEvents = [];
@@ -42,7 +43,7 @@ if (localStorage.getItem("eventData") !== null) {
   const eventData = JSON.parse(localStorage.getItem("eventData"));
 
   for (let i = 0; i < eventData.length; i++) {
-    new Booking(
+    new Event(
       eventData[i].name,
       eventData[i].age,
       eventData[i].number,
@@ -89,8 +90,6 @@ form.addEventListener("submit", function (event) {
   // To save the customer interractions in the localstorage
   const eventsStr = JSON.stringify(Event.allEvents);
   localStorage.setItem("eventData", eventsStr);
-
-  newBooking.render();
 });
 
 // function Calendar(year, month, days, bookings) {

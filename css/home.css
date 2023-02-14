@@ -57,16 +57,18 @@
 }
 
 .hero {
+  background-image: url("../images/reading.jpg");
+  height: 500px;
   background-size: cover;
-  animation: alternate 3s ease-in-out;
-}
-
-@keyframes alternate {
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
 }
 
 .grid-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 60px;
 }
@@ -74,7 +76,6 @@
   padding-bottom: 60px;
 }
 .content {
-  padding-bottom: 60px;
   width: 1450px;
   position: relative;
   padding-top: 60px;
@@ -93,16 +94,15 @@
   padding-bottom: 60px;
   display: flex;
   justify-content: center;
-  background-color: darkgrey;
-  color: #fff;
+  background-color: rgb(128, 185, 235);
 }
 article {
-  /* margin: 1rem; */
-  padding-top: 60px;
+  margin: 1rem;
+  padding-top: 40px;
   padding-bottom: 60px;
   width: 700px;
   height: 300px;
-  background-color: rgb(10, 132, 132);
+  background-color: rgb(128, 185, 235);
   position: relative;
   animation: moving 3s linear;
   text-align: center;
@@ -153,8 +153,8 @@ button:hover {
 
 body {
   font-family: monospace;
-  background-color: rgb(26, 26, 76);
-  color: whitesmoke;
+  background-color: azure;
+  color: black;
   font-size: 16px;
   text-align: justify;
   margin: 30px;
@@ -166,7 +166,7 @@ footer {
   bottom: 0;
   text-align: center;
   background-color: rgb(45, 42, 42);
-  color: #fff;
+  color: white;
   padding: 10px 0 30px;
 
   font-size: 13px;
@@ -228,7 +228,7 @@ ul li a {
   background-color: rgb(127, 127, 203);
 }
 p {
-  color: #fff;
+  color: black;
 }
 
 img {

@@ -1,42 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Activities</title>
-  </head>
-  <body>
-    <header>
-      <img src="images/brand_logo.png" id="siteLogo" alt="site-logo" />
-      <h1>Activities</h1>
-    </header>
-    <section>
-      <div id="lorem-container">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, asperiores? Ex sit quasi inventore cupiditate
-          natus dignissimos in tenetur, distinctio aperiam, expedita blanditiis quae. Perferendis voluptates dignissimos
-          nesciunt rerum non? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, cum ab possimus
-          eveniet obcaecati fugit. Aperiam odio, autem nam quae quas, possimus eaque, qui iure nesciunt temporibus
-          tempora soluta dolores.
-        </p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <title>Smiley faces After School Club</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav">
+          <img src="images/brand_logo.png" class="brand-logo">
+      <div class="nav-items">
+          
+        
       </div>
+      <ul class="links-container">
+          <li class="link-items"><a href="home.html" class="link">HOME</a></li>
+          <li class="link-items"><a href="about-us.html" class="link">ABOUT US</a></li>
+          <li class="link-items"><a href="index.html" class="link">ACTIVITIES</a></li>
+          <li class="link-items"><a href="#" class="link">CALENDAR</a></li>
+      </ul>
+      <button class="search-btn">LOGIN</button>
+      <button class="search-btn">REGISTER</button>
+      </nav>  
+  </header> 
+  <section>
+    <div class="hero">
+    </div>
     </section>
-    <section id="main-container">
-      <div id="img-container">
-        <img id="img1" />
-        <img id="img2" />
-        <img id="img3" />
-      </div>
+    <!-- slider -->
+    <Section>
+      <div class="slideshow-container">
 
-      <div id="chartContainer">
-        <canvas id="myChart"></canvas>
-      </div>
+        <div class="mySlides fade">
+      
+          <img src="images/reading.jpg" style="width:100%" height="600px">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+    
+          <img src="images/play.jpg" style="width:100%" height="600px">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="images/map.jpg" style="width:100%" height="600px">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </Section>
+    <section >
+        <div class="content">
+          <h1>Welcome to Smiley Faces After School! A place full of fun</h1>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+              laborum Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</P>
+            </div>
     </section>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./js/app.js"></script>
-  </body>
+    <Section>
+      <div class="services">
+        <img src="images/piano.jpg" style="width: 350px;" height="350px" alt="">
+        <img src="images/play.jpg" style="width: 350px;" height="350px" alt="">
+        <img src="images/reading.jpg" style="width: 350px;" height="350px" alt="">
+        <img src="images/happy.jpg" style="width: 350px;" height="350px" alt="">
+      </div>
+    </Section>
+    <section class="grid-container">
+      <article>
+        <h1>Welcome to Smiley Faces After School! A place full of fun</h1>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
+      <br> 
+            <button a href="index.html" id="vote" >Vote Now</button> 
+          </article>
+        
+            <img src="images/pencils.jpg" style="width: 1100px;" height="600px" alt="">
+      
+  </section>
+ 
+  <section id="contact">
+        <h1>We Would Like to Hear From You</h1> <br>
+        <P>Sign up with your email address to receive news and updates from us <br> 
+
+        <div class="btn">
+          <input id="email"  name="email" type="email" placeholder="Email Address" style="width: 20%;" height="50px">
+          <button style="width: 20%;">SIGN UP</button> 
+        </div>
+          <p> Your information is safe with us and we will only send important and relevant information. </p>
+  </section>
+  
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="images/brand_logo.png" class="logo">
+        <p>Subscribe to my channel</p>
+      </div>
+      <div class="col">
+        <h3>Office</h3>
+        <p>New Road</p>
+        <p>Greenland, Newport</p>
+        <p class="email=id">lovingit@gmail.com</p>
+        <h4>+44 012347687</h4>
+      </div>
+      <div class="col">
+        <h3>Links</h3>
+      <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>  
+          <li><a href="#">Follow Us</a></li>
+      </ul>
+      </div>
+  </div>
+  <hr>
+  <p class="copyright">Smiley Faces After School Club</p>
+  </footer>
+  
+  <script src="./js/home.js"></script>
+</body>
 </html>
+
+
+
+    

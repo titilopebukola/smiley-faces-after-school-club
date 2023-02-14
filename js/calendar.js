@@ -92,6 +92,8 @@ form.addEventListener("submit", function (event) {
   localStorage.setItem("eventData", eventsStr);
 });
 
+// calendar
+
 // function Calendar(year, month, days, bookings) {
 //   this.year = year;
 //   this.month = month;

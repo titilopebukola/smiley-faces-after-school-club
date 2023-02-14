@@ -4,41 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/calendar.css" />
-
     <title>Calendar</title>
   </head>
   <body>
-    <h1>Book Your Slot</h1>
-    <!-- Create a form that has an input for year, day month, booking, and when submitted it runs the new Calendar function with the user inputted data -->
-    <!-- form input -->
-    <form id="new-booking-form">
-      <fieldset>
-        <label for="name-input">Parent Full Name</label>
-        <input name="name" id="name-input" type="name" required="name" />
+    <div id="demo-desktop-month-view"></div>
+    <script>
+      var inst = mobiscroll.eventcalendar("#demo-desktop-month-view", {
+        theme: "ios",
+        themeVariant: "light",
+        clickToCreate: false,
+        dragToCreate: false,
+        dragToMove: false,
+        dragToResize: false,
+        eventDelete: false,
+        view: {
+          calendar: { labels: true },
+        },
+        onEventClick: function (event, inst) {
+          mobiscroll.toast({
+            message: event.event.title,
+          });
+        },
+      });
 
-        <label for="address-input">Address:</label>
-        <input name="address" id="address-input" type="text" />
-
-        <label for="number-input">Number of Children:</label>
-        <input name="childNumber" id="number-input" type="number" />
-
-        <label for="child-input">Child's Full Name:</label>
-        <input name="childName" id="name-input" type="text" />
-
-        <label for="age-input">Child's Age:</label>
-        <input name="childAge" id="age-input" type="text" required="age" />
-
-        <label for="days">Start Day:</label>
-        <input name="startDay" id="sart-day" type="date" />
-
-        <label for="days">End Day:</label>
-        <input name="endDay" id="end-day" type="date" />
-
-        <button id="submit-button" type="submit">SUBMIT</button>
-      </fieldset>
-    </form>
-    <script src="./js/calendar.js"></script>
+      mobiscroll.util.http.getJson(
+        "https://trial.mobiscroll.com/events/?vers=5",
+        function (events) {
+          inst.setEvents(events);
+        },
+        "jsonp"
+      );
+    </script>
   </body>
 </html>

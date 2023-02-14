@@ -55,24 +55,42 @@
 .link:hover {
   opacity: 1;
 }
+
+.hero {
+  background-size: cover;
+  animation: alternate 3s ease-in-out;
+}
+
+@keyframes alternate {
+}
+
 .grid-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 60px;
 }
-
+.grid-container img {
+  padding-bottom: 60px;
+}
 .content {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   width: 1450px;
   position: relative;
-  padding-top: 30px;
+  padding-top: 60px;
   font-size: 18px;
+}
+.content h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 #contact {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: center;
   background-color: darkgrey;
@@ -80,13 +98,14 @@
 }
 article {
   /* margin: 1rem; */
-
-  padding-bottom: 5px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 700px;
-  height: 450px;
+  height: 300px;
   background-color: rgb(10, 132, 132);
   position: relative;
   animation: moving 3s linear;
+  text-align: center;
 }
 
 @keyframes moving {
@@ -111,10 +130,27 @@ button:hover {
   background-color: rgb(116, 116, 229);
 }
 
-#vote {
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#contact h1 {
   display: flex;
   justify-content: center;
+  font-size: 2rem;
+  text-align: center;
 }
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 body {
   font-family: monospace;
   background-color: rgb(26, 26, 76);

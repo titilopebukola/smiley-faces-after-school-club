@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/booking .css" />
+
+    <title>Calendar</title>
+  </head>
+  <body>
+    <h1>Book Your Slot</h1>
+
+    <!-- form input -->
+    <form id="new-booking-form">
+      <fieldset>
+        <label for="name-input">Parent Full Name</label>
+        <input name="name" id="name-input" type="name" required="name" />
+
+        <label for="address-input">Address:</label>
+        <input name="address" id="address-input" type="text" />
+
+        <label for="number-input">Number of Children:</label>
+        <input name="childNumber" id="number-input" type="number" />
+
+        <label for="child-input">Child's Full Name:</label>
+        <input name="childName" id="name-input" type="text" />
+
+        <label for="age-input">Child's Age:</label>
+        <input name="childAge" id="age-input" type="text" required="age" />
+
+        <label for="days">Start Day:</label>
+        <input name="startDay" id="sart-day" type="date" />
+
+        <label for="days">End Day:</label>
+        <input name="endDay" id="end-day" type="date" />
+
+        <button id="submit-button" type="submit">SUBMIT</button>
+      </fieldset>
+    </form>
+    <script src="./js/booking .js"></script>
+  </body>
+</html>

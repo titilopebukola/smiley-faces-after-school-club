@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-image: url("../images/kid.jpg");
+  backdrop-filter: blur(15px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border-color: #fff;
+}
+
+input {
+  margin-bottom: 1rem;
+  height: 2rem;
+  background-color: mediumorchid;
+  border: mediumorchid;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+tr:hover {
+  background-color: blueviolet;
+}
+
+tr:nth-child(even) {
+  background-color: salmon;
+}
+
+#submit-button {
+  height: 3rem;
+  font-size: 18px;
+
+  border: none;
+}
+
+#submit-button:hover {
+  background-color: mediumorchid;
+  color: #fff;
+  border-radius: 20px;
+}

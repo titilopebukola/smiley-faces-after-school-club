@@ -4,17 +4,18 @@
 
 body {
   margin: 0 auto;
-  background-color: rgb(11, 11, 142);
+  background-color: teal;
   color: white;
   display: flex;
   justify-content: center;
+  max-width: 80%;
 }
 
 h1 {
   font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
-/* form input */
 form {
   font-family: Arial, Helvetica, sans-serif;
   width: 50%;
@@ -29,7 +30,8 @@ fieldset {
 }
 
 input {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  height: 2rem;
 }
 
 label {
@@ -42,4 +44,13 @@ tr:hover {
 
 tr:nth-child(even) {
   background-color: salmon;
+}
+
+#submit-button {
+  height: 3rem;
+  font-size: 20px;
+}
+
+#submit-button:hover {
+  background-color: aqua;
 }

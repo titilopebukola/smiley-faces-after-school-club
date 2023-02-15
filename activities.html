@@ -10,11 +10,21 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="images/brand_logo.png" id="siteLogo" alt="site-logo" /></a>
-
-      <h1>Activities</h1>
-    </header>
-
+      <header>
+        <nav class="navbar">
+          <div class="nav">
+            <a href="index.html"><img src="images/brand_logo.png" id="siteLogo" alt="site-logo" /></a>
+          </div>
+          <ul class="links-container">
+            <li class="link-items"><a href="index.html" class="link">HOME</a></li>
+            <li class="link-items"><a href="about-us.html" class="link">ABOUT US</a></li>
+            <li class="link-items"><a href="activities.html" class="link">ACTIVITIES</a></li>
+            <li class="link-items"><a href="team.html" class="link">TEAM</a></li>
+            <li class="link-items"><a href="booking.html" class="link">BOOKING</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="result"> <h1>Activities</h1></section>
     <section id="main-container">
       <div id="img-container">
         <img id="img1" />
@@ -26,7 +36,17 @@
         <canvas id="myChart"></canvas>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Follow Us</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/app.js"></script>
   </body>

@@ -84,6 +84,10 @@ p {
   justify-content: center;
   margin-right: 60px;
 }
+.container img:hover {
+  transform: scaleX(-1);
+}
+
 .container1 {
   display: inline-block;
   justify-content: justify;
@@ -191,46 +195,6 @@ input {
   align-items: center;
 }
 
-/* footer */
-footer {
-  width: 100%;
-  position: relative;
-  align-items: center;
-  bottom: 0;
-  text-align: center;
-  background-color: rgb(45, 42, 42);
-  color: white;
-  padding: 10px 0 30px;
-  font-size: 13px;
-  line-height: 20px;
-}
-
-ul li {
-  list-style: none;
-  margin-bottom: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 10px;
-  margin: 0 5px;
-  text-decoration: none;
-  color: #555;
-  opacity: 0.5;
-  transition: 0.5s;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-.logo {
-  width: 100px;
-}
-
-img {
-  justify-content: center;
-}
-
 .services {
   display: flex;
   align-content: center;
@@ -333,13 +297,18 @@ img {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 2rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
   padding: 8px 12px;
   position: absolute;
-  bottom: 30px;
-  width: 100%;
+  bottom: 250px;
+  width: 60%;
+  margin-left: 300px;
+  align-items: center;
   text-align: center;
+  background-color: #717171;
+  opacity: 60%;
 }
 
 /* The dots/bullets/indicators */
@@ -374,22 +343,28 @@ img {
   }
 }
 
-/* search
-input[type="text"] {
-  width: 130px;
-  align-content: center;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url("../images/search_icon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+/* footer */
+footer {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(45, 42, 42);
+  color: white;
+  padding: 10px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
-input[type="text"]:focus {
-  width: 100%;
-} */
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo {
+  width: 100px;
+}
+
+img {
+  justify-content: center;
+}

@@ -80,10 +80,10 @@ input[type="text"]:focus {
 .grid-container {
   display: flex;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 .grid-container img {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 
 .content {
@@ -92,7 +92,7 @@ input[type="text"]:focus {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: justify;
-  padding-top: 60px;
+  padding-top: 100px;
   font-size: 18px;
   color: #555;
   padding-left: 60px;
@@ -106,24 +106,14 @@ input[type="text"]:focus {
   padding-bottom: 10px;
 }
 
-#contact {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  justify-content: center;
-  background-color: pink;
-  color: #555;
-  max-width: 1300px;
-  margin-left: 60px;
-}
 article {
   margin: 2rem;
   margin-left: 60px;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   width: 600px;
   height: 300px;
-  background-color: plum;
+  background-color: rgb(152, 201, 245);
   position: relative;
   animation: moving 3s linear;
   text-align: center;
@@ -161,11 +151,14 @@ button:hover {
 }
 
 #contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: pink;
+  color: #555;
   text-align: center;
-  padding-top: 30px;
 }
 
 #contact h1 {
@@ -175,14 +168,19 @@ button:hover {
   text-align: center;
 }
 
+input {
+  border: none;
+  height: 2rem;
+}
 .btn {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
 body {
-  font-family: monospace;
+  font-family: sans-serif;
   background-color: azure;
   color: #555;
   font-size: 16px;
@@ -223,9 +221,7 @@ footer {
 }
 
 .logo {
-  width: 150px;
-  height: 70px;
-  margin-bottom: 30px;
+  width: 100px;
 }
 
 .col h3 {
@@ -249,7 +245,7 @@ ul li a {
 
 #container-1 {
   margin: auto;
-  border: 50px solid #555;
+  border: 50px solid white;
   font-size: 30px;
   padding: 10px;
   text-align: center;
@@ -268,7 +264,7 @@ img {
 .services {
   display: flex;
   align-content: center;
-  padding-top: 60px;
+  padding-top: 100px;
   justify-content: space-around;
   align-items: center;
   max-width: 1300px;
@@ -368,10 +364,10 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 2rem;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 30px;
   width: 100%;
   text-align: center;
 }
@@ -382,7 +378,7 @@ img {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: mediumorchid;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -407,121 +403,3 @@ img {
     opacity: 1;
   }
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-}
-
-/* .hero {
-  background-image: url("../images/reading.jpg");
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right top;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 60px;
-} */
-
-/* * {
-  margin: 0;
-  padding: 0;
-}
-main {
-  width: 100%;
-  background-color: rgb(57, 50, 50);
-  background-size: cover;
-  height: 100vh;
-}
-
-.navbar {
-  width: 1200px;
-  height: 75px;
-  margin: auto;
-}
-
-.logo {
-  width: 200px;
-  height: 70px;
-  float: left;
-}
-
-menu {
-  width: 400px;
-  float: left;
-  height: 70px;
-}
-
-ul {
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-ul li {
-  list-style: none;
-  margin-left: 62px;
-  margin-top: 27px;
-  font-size: 14px;
-}
-ul li a {
-  text-decoration: none;
-  color: white;
-} */
-
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-ul li a {
-  text-decoration: none;
-  color: #aaaaaa;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  transition: 0.4s ease-in-out;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-article {
-  display: flex;
-  justify-content: space-between;
-  min-width: 960px;
-  max-height: 440px;
-  margin-left: 30px;
-}
-
-article p {
-  overflow-y: scroll;
-}
-
-button {
-  padding: 1rem 3rem;
-  width: 75%;
-  border-radius: 10px;
-  transition-duration: 0.35s;
-}
-
-button:hover {
-  background-color: teal;
-}
-
-footer {
-  background-color: #aaaaaa;
-  min-height: 200px;
-  margin-top: 30px;
-} */

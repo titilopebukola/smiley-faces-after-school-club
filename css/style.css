@@ -26,8 +26,8 @@ body {
   */
 header {
   grid-area: 1 /1 /2 /3;
-  background-color: lightcoral;
-  color: white;
+  background-color: aliceblue;
+  color: #555;
 }
 
 #siteLogo {
@@ -36,7 +36,7 @@ header {
 
 h1 {
   font-size: 3rem;
-  color: white;
+  color: #555;
   display: flex;
   justify-content: center;
 }
@@ -75,4 +75,20 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#vote {
+  border-radius: 20px;
+  transition-duration: 0.35s;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 16px;
 }

@@ -63,4 +63,6 @@ form.addEventListener("submit", function (event) {
   // To save the customer interractions in the localstorage
   const eventsStr = JSON.stringify(Event.allEvents);
   localStorage.setItem("eventData", eventsStr);
+
+  newBooking.render();
 });

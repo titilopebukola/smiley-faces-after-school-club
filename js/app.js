@@ -9,9 +9,23 @@ function Activity(name, src, clicks, views) {
 Activity.allActivities = [];
 
 let totalClicks = 0;
-const maxClicks = 3;
+const maxClicks = 5;
 
-const activityNames = ["music", "reading", "game", "sport", "science", "piano", "play", "map", "build"];
+const activityNames = [
+  "music",
+  "reading",
+  "game",
+  "sport",
+  "science",
+  "piano",
+  "play",
+  "art",
+  "ballet",
+  "coding",
+  "reader",
+  "dancing",
+  "builder",
+];
 
 if (localStorage.getItem("activityData") == null) {
   for (let i = 0; i < activityNames.length; i++) {

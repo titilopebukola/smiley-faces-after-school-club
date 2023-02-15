@@ -99,6 +99,10 @@ span {
   font-style: italic;
 }
 
+#siteLogo {
+  width: 100px;
+}
+
 /* footer */
 footer {
   width: 100%;

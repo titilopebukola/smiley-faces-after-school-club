@@ -17,13 +17,6 @@ body {
   background-color: darkblue;
 }
 
-/* grid styles */
-/* Grid area order
-  grid-row-start
-  grid-column-start
-  grid-row-end
-  grid--column-end 
-  */
 header {
   /* grid-area: 1 /1 /2 /3; */
   background-color: aliceblue;
@@ -176,6 +169,7 @@ ul li {
   color: #555;
   opacity: 0.5;
   transition: 0.5s;
+  font-size: 16px;
 }
 
 ul li a {

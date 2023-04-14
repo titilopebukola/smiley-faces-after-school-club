@@ -59,8 +59,26 @@ form.addEventListener("submit", function (event) {
     startDate,
     endDate
   );
-
+  newBooking.render();
   // To save the customer interractions in the localstorage
   const eventsStr = JSON.stringify(Event.allEvents);
   localStorage.setItem("eventData", eventsStr);
 });
+
+// rendernewBooking();
+// function rendernewBooking() {
+//   let names = [];
+//   let age = [];
+//   let number = [];
+//   let startDate = [];
+//   let endDate = [];
+
+//   for (let i = 0; i < state.allEvenbtsArray.length; i++) {
+//     names.push(state.llEvenbtsArray[i].name);
+//     age.push(state.llEvenbtsArray[i].age);
+//     number.push(state.llEvenbtsArray[i].number);
+//     startDate.push(state.llEvenbtsArray[i].startDate);
+//     endDate.push(state.llEvenbtsArray[i].endDate);
+//   }
+// }
+// rendernewBooking();

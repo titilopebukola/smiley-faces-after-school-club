@@ -13,7 +13,19 @@ body {
   justify-content: center;
   max-width: 80%;
 }
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
 
+.navbar .logo a span {
+  color: crimson;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span {
+  color: #fff;
+}
 #siteLogo {
   width: 100px;
 }

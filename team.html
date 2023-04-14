@@ -4,27 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="./css/team.css" />
-    <title>Smiley faces After School Club</title>
+    <title>Smiley Faces After School</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="nav">
-          <a href="index.html"><img src="images/brand_logo.png" id="siteLogo" alt="site-logo" /></a>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Smiley <span>Faces:)</span></a>
         </div>
-        <ul class="links-container">
+        <ul id="sidemenu">
           <li class="link-items"><a href="index.html" class="link">HOME</a></li>
           <li class="link-items"><a href="about-us.html" class="link">ABOUT US</a></li>
           <li class="link-items"><a href="activities.html" class="link">ACTIVITIES</a></li>
           <li class="link-items"><a href="team.html" class="link">TEAM</a></li>
           <li class="link-items"><a href="booking.html" class="link">BOOKING</a></li>
+          <i class="fa fa-times" onclick="closemenu()"></i>
         </ul>
-      </nav>
-    </header>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
+
+    <!-- team sections -->
+    <section>
+      <h2 class="section-title">Meet Our <span>Team</span></h2>
+      <div class="our-ministers">
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/ceo.jpg" alt="Jane" style="width: 250px" />
+          <div class="container">
+            <h3>Jane Doe</h3>
+            <p class="title">CEO</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>jane@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/coach.jpg" alt="Mike" style="width: 250px" />
+          <div class="container">
+            <h3>Jane Doe</h3>
+            <p class="title">Coach</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/teacher.jpg" alt="John" style="width: 250px" />
+          <div class="container">
+            <h3>Leann Ross</h3>
+            <p class="title">Teacherr</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/doctor.jpg" alt="John" style="width: 250px" />
+          <div class="container">
+            <h3>Kate Greenwood</h3>
+            <p class="title">Paediatrician</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
+      <div class="our-ministers">
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/minder.jpg" alt="Jane" style="width: 250px" />
+          <div class="container">
+            <h3>Ria Josh</h3>
+            <p class="title">Child Minder</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>jane@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/nusre.jpg" alt="Mike" style="width: 250px" />
+          <div class="container">
+            <h3>Sophia Welsh</h3>
+            <p class="title">Child Minder</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/teacher.jpg" alt="John" style="width: 250px" />
+          <div class="container">
+            <h3>Daniella Brown</h3>
+            <p class="title">Nutritionist</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 250px" height="400px">
+          <img src="./images/doctor.jpg" alt="John" style="width: 250px" />
+          <div class="container">
+            <h3>Kate Greenwood</h3>
+            <p class="title">Paediatrician</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
       <div class="team">
         <img src="images/ceo.jpg" style="width: 350px" height="350px" alt="" />
         <img src="images/coach.jpg" style="width: 350px" height="350px" alt="" />
@@ -102,7 +211,7 @@
         </p>
         <button><a href="#" id="vote">Contact</a></button>
       </div>
-    </section>
+    </section> -->
     <footer>
       <div class="footer">
         <ul>
@@ -114,5 +223,15 @@
         </ul>
       </div>
     </footer>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>

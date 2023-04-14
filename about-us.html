@@ -4,91 +4,118 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/about.css" />
-    <title>Smiley faces After School Club</title>
+    <title>Smiley Faces After School</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="nav">
-          <a href="index.html"><img src="images/brand_logo.png" id="siteLogo" alt="site-logo" /></a>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Smiley <span>Faces:)</span></a>
         </div>
-        <ul class="links-container">
+        <ul id="sidemenu">
           <li class="link-items"><a href="index.html" class="link">HOME</a></li>
           <li class="link-items"><a href="about-us.html" class="link">ABOUT US</a></li>
           <li class="link-items"><a href="activities.html" class="link">ACTIVITIES</a></li>
           <li class="link-items"><a href="team.html" class="link">TEAM</a></li>
           <li class="link-items"><a href="booking.html" class="link">BOOKING</a></li>
+          <i class="fa fa-times" onclick="closemenu()"></i>
         </ul>
-      </nav>
-    </header>
-    <section class="grid-container">
-      <article>
-        <h1>Who we are</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-          aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-          aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-          aliquid ex ea commodi consequatur. Quis aute iure
-        </p>
-        <br />
-        <button><a href="team.html" id="vote">Read More</a></button>
-      </article>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
 
-      <img src="images/team.jpg" style="width: 500px" height="500px" alt="" />
+    <!-- about page -->
+    <section>
+      <section id="about">
+        <div class="container">
+          <div class="about about-row">
+            <div class="about-col-1">
+              <img src="./images/team.jpg" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h2 class="subtitle">Who we are</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quas provident atque? Laudantium odit
+                beatae minima est facilis. Ab ea aspernatur facere iste delectus nam. Aut ratione sequi at dicta? Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tempora dolore cum accusantium, laudantium
+                cumque. Fuga, quasi debitis aperiam nisi doloribus distinctio, rem nobis possimus placeat dolor numquam
+                quibusdam reprehenderit?.Laudantium odit beatae minima est facilis. Ab ea aspernatur facere iste
+                delectus nam. Aut ratione sequi at dicta? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis tempora dolore cum accusantium, laudantium cumque. Fuga, quasi debitis aperiam nisi doloribus
+                distinctio, rem nobis possimus placeat dolor numquam quibusdam reprehenderit?
+              </p>
+              <a href="activities.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <section class="grid-container">
-      <img src="images/kid3.jpg" style="width: 500px" height="500px" alt="" />
 
-      <article>
-        <h1>What we believe</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-          aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum
-        </p>
-        <br />
-        <p>
-          aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-          aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-        </p>
-        <br />
-      </article>
+    <section>
+      <section id="about">
+        <div class="container">
+          <div class="about about-row">
+            <!-- <div class="about-col-1">
+                    <img src="./images/kid.jpg" alt="">
+                  </div> -->
+            <div class="about-col-2">
+              <h2 class="subtitle">What we believe</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quas provident atque? Laudantium odit
+                beatae minima est facilis. Ab ea aspernatur facere iste delectus nam. Aut ratione sequi at dicta? Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tempora dolore cum accusantium, laudantium
+                cumque. Fuga, quasi debitis aperiam nisi doloribus distinctio, rem nobis possimus placeat dolor numquam
+                quibusdam reprehenderit?.Laudantium odit beatae minima est facilis. Ab ea aspernatur facere iste
+                delectus nam. Aut ratione sequi at dicta? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis tempora dolore cum accusantium, laudantium cumque. Fuga, quasi debitis aperiam nisi doloribus
+                distinctio, rem nobis possimus placeat dolor numquam quibusdam reprehenderit?
+              </p>
+              <a href="activities.html" class="btn">Read More</a>
+            </div>
+            <div class="about-col-1">
+              <img src="./images/kid2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <section class="grid-container">
-      <article>
-        <h1>Our Mission</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-          aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum
-        </p>
-        <br />
-        <p>
-          aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum
-        </p>
-        <br />
-      </article>
 
-      <img src="images/kid.jpg" style="width: 500px" height="500px" alt="" />
+    <section>
+      <section id="about">
+        <div class="container">
+          <div class="about about-row">
+            <div class="about-col-1">
+              <img src="./images/kid.jpg" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h2 class="subtitle">Our Mission</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quas provident atque? Laudantium odit
+                beatae minima est facilis. Ab ea aspernatur facere iste delectus nam. Aut ratione sequi at dicta? Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tempora dolore cum accusantium, laudantium
+                cumque. Fuga, quasi debitis aperiam nisi doloribus distinctio, rem nobis possimus placeat dolor numquam
+                quibusdam reprehenderit?.Laudantium odit beatae minima est facilis. Ab ea aspernatur facere iste
+                delectus nam. Aut ratione sequi at dicta? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis tempora dolore cum accusantium, laudantium cumque. Fuga, quasi debitis aperiam nisi doloribus
+                distinctio, rem nobis possimus placeat dolor numquam quibusdam reprehenderit?
+              </p>
+              <a href="activities.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
+
     <footer>
       <div class="footer">
         <ul>
@@ -100,5 +127,15 @@
         </ul>
       </div>
     </footer>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>

@@ -95,74 +95,6 @@ nav .fa {
   }
 }
 
-/* home section  */
-/* .home {
-  display: flex;
-  background: url("../images/reading.png") no-repeat center;
-  height: 100vh;
-  color: #000;
-  min-height: 500px;
-}
-.home .max-width {
-  margin: auto 0 auto 40px;
-}
-.home .home-content .text-1 {
-  font-size: 27px;
-}
-
-.home .home-content .text-2 {
-  font-size: 35px;
-  font-weight: 600;
-  margin-left: -3px;
-}
-.home .home-content .text-3 {
-  font-size: 35px;
-  margin: 5px 0;
-}
-.home .home-content .text-3 span {
-  color: crimson;
-  font-weight: 500;
-} */
-
-/* voting */
-
-#vote {
-  background-color: #f2f2f2;
-  padding: 50px 0;
-  margin: 0 auto;
-}
-
-.vote-row {
-  display: flex;
-  align-items: center;
-}
-
-.vote-col-1 {
-  flex: 0 0 50%;
-  position: relative;
-  padding-left: 50px;
-}
-
-.vote-col-1 img {
-  max-width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  animation: slide-in 1s forwards;
-}
-
-.vote-col-2 {
-  flex: 0 0 50%;
-  padding-left: 50px;
-  max-width: 40%;
-}
-
-.subtitle {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
 .btn {
   display: block;
   margin: 50px auto;
@@ -216,6 +148,53 @@ nav .fa {
     font-size: 14px;
     padding: 8px 16px;
     margin-top: 10px;
+  }
+}
+
+/* form */
+.registration-form form {
+  display: none;
+}
+.registration-form form:first-child {
+  display: block;
+}
+.registration-form h2 {
+  margin-top: 0;
+}
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.registration-form input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.registration-form button {
+  padding: 5px 10px;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.registration-form button.prev-button {
+  background-color: #ccc;
+}
+.registration-form button.submit-button {
+  background-color: #008cba;
+}
+@media screen and (min-width: 768px) {
+  .registration-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .registration-form form {
+    width: 50%;
+    margin: 0 10px;
   }
 }
 
@@ -328,7 +307,7 @@ img {
     z-index: 1;
     background-color: #717171;
     opacity: 60%;
-    color: #fff;
+    color: #555;
     font-weight: bold;
   }
 }
@@ -385,92 +364,102 @@ p {
   }
 }
 
-/* contact */
-
-#contact {
-  background-color: lightpink;
-  padding: 50px 0;
-  text-align: center;
+/* booking */
+/* .row {
+  display: flex;
+  background-color: #f7f7f7;
+} */
+.booking-left {
+  flex-basis: 35%;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+.booking-right {
+  flex-basis: 60%;
+  /* max-width: 50%; */
+}
+.booking-left p {
+  margin-top: 30px;
+}
+.booking-left p i {
+  color: palevioletred;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 30px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: palevioletred;
+  transform: translateY(-5px);
+}
+.btn.btn-2 {
+  display: inline-block;
+  background: palevioletred;
 }
 
-p {
-  margin-bottom: 20px;
+.booking-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  /* background: darkslategrey; */
+  padding: 15px;
+  margin: 15px 0;
+  color: #555;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn-2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.btn {
+#form2 {
+  left: 450px;
+}
+.step-row {
+  width: 360px;
+  height: 40px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 600;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
 }
 
-#email {
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  width: 20%;
+.step-col {
+  width: 180px;
+  text-align: center;
+  color: palevioletred;
+  position: relative;
 }
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff6b6b;
-  color: #fff;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-weight: 600;
+#progress {
+  position: absolute;
+  height: 100%;
+  width: 180px;
+  background: linear-gradient(to right, palevioletred);
 }
-
-button:hover {
-  background-color: #ff4d4d;
+#progress::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid palevioletred;
 }
-
-/* Media queries for smaller screens */
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  .btn {
-    flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-
-  #email {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-  button {
-    display: inline-block;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  #contact {
-    padding: 50px;
-  }
-  .register-btn {
-    max-width: 50%;
-  }
-}
-
 /* footer */
 footer {
   width: 100%;
@@ -495,82 +484,4 @@ ul li a {
 
 img {
   justify-content: center;
-}
-
-/* services */
-#services {
-  padding: 50px 0;
-}
-.work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-.work {
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-.work img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  height: 350px;
-  transition: transform 0.5s;
-}
-.layer {
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), palevioletred);
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  transition: height 0.5s;
-  color: #fff;
-}
-.layer h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.layer a {
-  margin-top: 20px;
-  color: #000;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 60px;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-}
-.work:hover img {
-  transform: scale(1.1);
-}
-.work:hover .layer {
-  height: 100%;
-}
-.btn {
-  display: block;
-  margin: 50px auto;
-  width: fit-content;
-  border: 1px solid palevioletred;
-  padding: 14px 50px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #000;
-  transition: background 0.5s;
-}
-.btn:hover {
-  background: palevioletred;
-  color: #fff;
 }

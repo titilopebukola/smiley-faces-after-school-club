@@ -21,7 +21,7 @@ section {
 .navbar {
   /* position: fixed; */
   width: 100%;
-  background: darkslategrey;
+  background: darkslateblue;
   padding: 15px 0;
   font-family: poppins;
   transition: all 0.3s ease;
@@ -76,7 +76,7 @@ nav .fa {
     font-size: 25px;
   }
   nav ul {
-    background: darkslategray;
+    background: darkslateblue;
     position: fixed;
     top: 0;
     right: -200px;
@@ -141,7 +141,7 @@ nav .fa {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid palevioletred;
+  border: 1px solid #ff6b6b;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -150,7 +150,7 @@ nav .fa {
   font-size: 16px;
 }
 .btn:hover {
-  background: palevioletred;
+  background: #ff6b6b;
   color: #fff;
 }
 

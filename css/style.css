@@ -22,14 +22,14 @@ section {
 .navbar {
   /* position: fixed; */
   width: 100%;
-  background: darkslategrey;
+  background: darkslateblue;
   padding: 15px 0;
   font-family: poppins;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: crimson;
+  background: #ff6b6b;
 }
 .navbar .max-width {
   display: flex;
@@ -43,7 +43,7 @@ section {
 }
 
 .navbar .logo a span {
-  color: crimson;
+  color: #ff6b6b;
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
@@ -61,7 +61,7 @@ section {
   transition: color 0.3s ease;
 }
 .navbar #sidemenu li a:hover {
-  color: crimson;
+  color: #ff6b6b;
 }
 .navbar.sticky #sidemenu li a:hover {
   color: #fff;
@@ -77,7 +77,7 @@ nav .fa {
     font-size: 25px;
   }
   nav ul {
-    background: darkslategray;
+    background: darkslateblue;
     position: fixed;
     top: 0;
     right: -200px;

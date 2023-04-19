@@ -13,7 +13,7 @@
     type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+   
     <link rel="stylesheet" href="./css/test.css" />
     <title>Smiley Faces After School</title>
   </head>
@@ -35,145 +35,85 @@
         <i class="fa fa-bars" onclick="openmenu()"></i>
       </div>
     </nav>
-
-    <!-- home section -->
-    <!-- <section class="home">
-      <div class="max-width">
-        <div class="home-content">
-          <div class="text-1">Welcome to Smiley faces After School Club</div>
+<section>
+  <div class="registration-form">
+    <form id="step1">
+      <h2>Step 1: Personal Information</h2>
+      <input type="text" name="Name" placeholder="Your Name" required> 
+            <input type="email" name="Email" placeholder="Your Email" required> 
+            <input type="address" name="Address" type="text"  placeholder="Your Address" required> 
+            <input name="children"  name="Children"  type="number" placeholder="Number of Children" required> 
+            <input type="date" name="Sart" placeholder="Start Day" required >
+            <input type="date" name="End" placeholder="End Day">  
+      <button type="button" class="next-button" onclick="nextStep()">Next</button>
+    </form>
+    <form id="step2">
+      <h2>Step 2: Children Information</h2>
+      <input type="text" name="Name" placeholder="Name (child 1)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 2)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 3)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+      <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+      <button type="button" class="next-button" onclick="nextStep()">Next</button>
+    </form>
+    <form id="step3">
+      <h2>Step 3: Payment Information</h2>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" required>
+      <label for="cvv-number">CVV Number:</label>
+      <input type="text" id="cvv-number" name="vv-number" required>
+      <label for="expiry-date">Expiry Date:</label>
+      <input type="text" id="expiry-date" name="expiry-date" required>
+      <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
   
-          <p>We're here to <span class="typing"></span> </p>
-         
-      </div>
-    </section> -->
-<!-- slider -->
+  <!-- <div class="step-row">
+    <div id="progress"></div>
+    <div class="step-col">Step 1</div>
+    <div class="step-col">Step 2</div>
 
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="images/reading.jpg" style="width: 100%" height="600px" />
-      <div class="text">A Healthy and Safe Environment <br>We're here to <span class="typing"></span> </p> </div>
-     
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/play.jpg" style="width: 100%" height="600px" />
-      <div class="text">We foster High expectations for all participants <br>We're here to <span class="typing1"></span></div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/map.jpg" style="width: 100%" height="600px" />
-      <div class="text">We support the needs of working parents <br>We're here to <span class="typing2"></span></div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
   </div>
-  <br />
-
-  <div style="text-align: center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-<section>
-  <div class="content">
-    <h1>Welcome to Smiley Faces After School! A place full of fun</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-      aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
-      fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt.
-    </p>
-    <br />
-
-    <p>
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-      laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
-      officia deserunt mollit anim id est laborum laborum Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
-      eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
-      ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obaecat cupiditat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum
-    </p>
-  </div>
-</section>
- <!-- services -->
- <section>
-  <div id="services"> 
+  <div id="booking">
     <div class="container">
-      <h1 class="subtitle">Our Services</h1>
-      <div class="work-list">
-        <div class="work">
-          <img src="./images/music.jpg"  alt="">
-          <div class="layer">
-            <h3>Music</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sapiente nisi facilis officiis optio hic, tempora unde asperiores inventore? Harum, quae beatae modi quod nihil facere quo autem ab deleniti!.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
+      <div class="row">
+        <div class="booking-left">
+          <h1 class="subtitle">Book your slot </h1>
+          <p>Kindly fill the form to secure a space for your child(s)</p>
         </div>
-        <div class="work">
-          <img src="./images/art1.jpg" alt="">
-          <div class="layer">
-            <h3>Art</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa quod dicta ab facilis, iure autem ullam harum vitae voluptatem omnis, enim alias nemo atque labore officiis pariatur tenetur perferendis!</p>
-            <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="./images/readers.jpg" alt="">
-          <div class="layer">
-            <h3>Reading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum quae debitis aut accusantium, eaque quas impedit, fugit minus ad ea vero nesciunt voluptas vitae. Nam magni quidem voluptas laborum..</p>
-            <a href="#"><i class="fa fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="./images/dancing.jpg" alt="">
-          <div class="layer">
-            <h3>Dancing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit neque in. Odio consequatur rerum, accusamus, at in accusantium incidunt atque aliquid sequi illo expedita eum, quibusdam deserunt eos officiis?.</p>
-            <a href="#"><i class="fa fa-arrow-up-right-from-square"></i></a>
-          </div>
+        <div class="booking-right">
+  
+          <form id="form1">
+            <h3>Parent Info</h3>
+            <input type="text" name="Name" placeholder="Your Name" required> 
+            <input type="email" name="Email" placeholder="Your Email" required> 
+            <input type="address" name="Address" type="text"  placeholder="Your Address" required> 
+            <input name="children"  name="Children"  type="number"  placeholder="Number of Children" required> 
+            <input type="date" name="Sart Date" type="date" placeholder="Start Date" required >
+            <input type="date" name="End-Date" type="date"  placeholder="End Date" required> 
+            <button type="submit" class="btn btn-2">Submit</button>
+          </form>
+          <form id="form2">
+            <h3>Children Info</h3>
+            <input type="text" name="Name" placeholder="Name (child 1)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 2)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 3)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <button type="submit" class="btn btn-2">Back</button>
+            <button type="submit" class="btn btn-2">Submit</button>
+          </form>
+          
         </div>
       </div>
-      <a href="#" class="btn">See More</a>
     </div>
   </div>
-</section>
-<!-- voting section -->
-<section>
-<section id="vote">
-      <div class="container">
-        <div class="row vote-row" >
-          <div class="vote-col-1">
-            <img src="./images/kid.jpg" alt="">
-          </div>
-          <div class="vote-col-2">
-            <h2 class="subtitle">Your thought is important to us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quas provident atque? Laudantium odit beatae minima est facilis. Ab ea aspernatur facere iste delectus nam. Aut ratione sequi at dicta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tempora dolore cum accusantium, laudantium cumque. Fuga, quasi debitis aperiam nisi doloribus distinctio, rem nobis possimus placeat dolor numquam quibusdam reprehenderit?.Laudantium odit beatae minima est facilis. Ab ea aspernatur facere iste delectus nam. Aut ratione sequi at dicta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tempora dolore cum accusantium, laudantium cumque. Fuga, quasi debitis aperiam nisi doloribus distinctio, rem nobis possimus placeat dolor numquam quibusdam reprehenderit? </p>
-            <a href="activities.html" class="btn">Vote Now</a>
-          </div>
-         
-        </div>
-  </div>
-  </section>
-</section>
-<section id="contact">
-      <h1>We Would Like to Hear From You</h1>
-      <br />
-      <p>Sign up with your email address to receive news and updates from us <br /></p>
-      <br />
-
-      <div class="input">
-        <input id="email" name="email" type="email" placeholder="Email Address"  />
-        <button class="register-btn" >SIGN UP</button>
-      </div>
-      <p>Your information is safe with us and we will only send important and relevant information.</p>
-</section>
-
+</section> -->
+   
     <footer>
       <div class="footer">
         <ul>
@@ -194,35 +134,23 @@
       function closemenu(){
         sidemenu.style.right = "-200px";
       }
+    </script>
 
+    <script>
+      var currentStep = 1;
+function nextStep() {
+  document.getElementById('step' + currentStep).style.display = 'none';
+  currentStep++;
+  document.getElementById('step' + currentStep).style.display = 'block';
+}
+function prevStep() {
+  document.getElementById('step' + currentStep).style.display = 'none';
+  currentStep--;
+  document.getElementById('step' + currentStep).style.display = 'block';
+}
 
     </script>
-    <script src="./js/script.js"></script>
-    <script src="./js/home.js"></script>
-    <!-- script for sidemenu -->
+  
 
-  </script>
-  <!-- typing animation script -->
- <script>
-  var typed = new Typed(".typing", {
-  strings: ["take good care of your kid so you can have peace of mind while working", "ensure your child have fun", "put smile on your faces", "give you value for money"],
-  typedSpeed: 100,
-  backSpeed: 60,
-  loop: true,
-});
-var typed = new Typed(".typing1", {
-  strings: ["take good care of your kid so you can have peace of mind while working", "ensure your child have fun", "put smile on your faces", "give you value for money"],
-  typedSpeed: 100,
-  backSpeed: 60,
-  loop: true,
-});
-var typed = new Typed(".typing2", {
-  strings: ["take good care of your kid so you can have peace of mind while working", "ensure your child have fun", "put smile on your faces", "give you value for money"],
-  typedSpeed: 100,
-  backSpeed: 60,
-  loop: true,
-});
-
- </script>
   </body>
 </html>

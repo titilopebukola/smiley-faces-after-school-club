@@ -4,44 +4,153 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+   
     <link rel="stylesheet" href="./css/booking .css" />
-
-    <title>Calendar</title>
+    <title>Smiley Faces After School</title>
   </head>
   <body>
-    <div class="nav">
-      <a href="index.html"><img src="images/brand_logo.png" id="siteLogo" alt="site-logo" /></a>
-    </div>
-    <h1>Book Your Slot</h1>
-
-    <!-- form input -->
-    <form id="new-booking-form">
-      <fieldset>
-        <label for="name-input">Parent Full Name</label>
-        <input name="name" id="name-input" type="name" required="name" />
-
-        <label for="address-input">Address:</label>
-        <input name="address" id="address-input" type="text" />
-
-        <label for="number-input">Number of Children:</label>
-        <input name="childNumber" id="number-input" type="number" />
-
-        <label for="child-input">Child's Full Name:</label>
-        <input name="childName" id="name-input" type="text" />
-
-        <label for="age-input">Child's Age:</label>
-        <input name="childAge" id="age-input" type="text" required="age" />
-
-        <label for="days">Start Day:</label>
-        <input name="startDay" id="sart-day" type="date" />
-
-        <label for="days">End Day:</label>
-        <input name="endDay" id="end-day" type="date" />
-
-        <button id="submit-button" type="submit">SUBMIT</button>
-      </fieldset>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Smiley <span>Faces:)</span></a>
+        </div>
+        <ul id="sidemenu">
+          <li class="link-items"><a href="index.html" class="link">HOME</a></li>
+          <li class="link-items"><a href="about-us.html" class="link">ABOUT US</a></li>
+          <li class="link-items"><a href="activities.html" class="link">ACTIVITIES</a></li>
+          <li class="link-items"><a href="team.html" class="link">TEAM</a></li>
+          <li class="link-items"><a href="booking.html" class="link">BOOKING</a></li>
+          <i class="fa fa-times" onclick="closemenu()"></i>
+           
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
+<section>
+  <div class="registration-form">
+    <form id="step1">
+      <h2>Step 1: Personal Information</h2>
+      <input type="text" name="Name" placeholder="Your Name" required> 
+            <input type="email" name="Email" placeholder="Your Email" required> 
+            <input type="address" name="Address" type="text"  placeholder="Your Address" required> 
+            <input name="children"  name="Children"  type="number" placeholder="Number of Children" required> 
+            <input type="date" name="Sart" placeholder="Start Day" required >
+            <input type="date" name="End" placeholder="End Day">  
+      <button type="button" class="next-button" onclick="nextStep()">Next</button>
     </form>
-    <script src="./js/booking .js"></script>
+    <form id="step2">
+      <h2>Step 2: Children Information</h2>
+      <input type="text" name="Name" placeholder="Name (child 1)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 2)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 3)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+      <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+      <button type="button" class="next-button" onclick="nextStep()">Next</button>
+    </form>
+    <form id="step3">
+      <h2>Step 3: Payment Information</h2>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" required>
+      <label for="cvv-number">CVV Number:</label>
+      <input type="text" id="cvv-number" name="vv-number" required>
+      <label for="expiry-date">Expiry Date:</label>
+      <input type="text" id="expiry-date" name="expiry-date" required>
+      <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+  
+  <!-- <div class="step-row">
+    <div id="progress"></div>
+    <div class="step-col">Step 1</div>
+    <div class="step-col">Step 2</div>
+
+  </div>
+  <div id="booking">
+    <div class="container">
+      <div class="row">
+        <div class="booking-left">
+          <h1 class="subtitle">Book your slot </h1>
+          <p>Kindly fill the form to secure a space for your child(s)</p>
+        </div>
+        <div class="booking-right">
+  
+          <form id="form1">
+            <h3>Parent Info</h3>
+            <input type="text" name="Name" placeholder="Your Name" required> 
+            <input type="email" name="Email" placeholder="Your Email" required> 
+            <input type="address" name="Address" type="text"  placeholder="Your Address" required> 
+            <input name="children"  name="Children"  type="number"  placeholder="Number of Children" required> 
+            <input type="date" name="Sart Date" type="date" placeholder="Start Date" required >
+            <input type="date" name="End-Date" type="date"  placeholder="End Date" required> 
+            <button type="submit" class="btn btn-2">Submit</button>
+          </form>
+          <form id="form2">
+            <h3>Children Info</h3>
+            <input type="text" name="Name" placeholder="Name (child 1)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 2)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <input type="text" name="Name" placeholder="Name (child 3)" required> 
+            <input name="age" id="age-input" type="text" placeholder="Age" required> 
+            <button type="submit" class="btn btn-2">Back</button>
+            <button type="submit" class="btn btn-2">Submit</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+   
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Follow Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+  
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      var currentStep = 1;
+function nextStep() {
+  document.getElementById('step' + currentStep).style.display = 'none';
+  currentStep++;
+  document.getElementById('step' + currentStep).style.display = 'block';
+}
+function prevStep() {
+  document.getElementById('step' + currentStep).style.display = 'none';
+  currentStep--;
+  document.getElementById('step' + currentStep).style.display = 'block';
+}
+
+    </script>
+  
+
   </body>
 </html>
